@@ -1,0 +1,17 @@
+{
+    "name": "djanky",
+    "description": "An itty bitty web framework, loosely inspired by Django",
+    "version": "0.1.1",
+    "author": {
+        "name": "Potch",
+        "email": "me@potch.me"
+    },
+    "dependencies": {
+        "underscore": "1.x.x",
+        "nunjucks": "0.1.x"
+    },
+    "engines": {
+        "node": "0.8.x"
+    },
+    "main": "index"
+}
