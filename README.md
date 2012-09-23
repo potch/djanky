@@ -25,7 +25,17 @@ Exposed Objects
 
 ### Server
 
-* TODO: write this.
+The core Djanky class.
+
+#### Constructor
+
+`new djanky.Server( _&lt;port>_ , _&lt;routes_ )`
+
+##### Parameters
+
+* `port` - The port to listen to. Defaults to 8080.
+* `routes` an Array of routes, stored as an Array of 3 values:
+    * `[_pattern_, _handler_, _name_]`
 
 ### Error404
 
