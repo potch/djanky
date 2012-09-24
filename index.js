@@ -1,3 +1,4 @@
+var fs = require('fs');
 var http = require('http');
 var _ = require('underscore');
 
@@ -66,6 +67,8 @@ Error500.prototype = new Error();
 Error500.prototype.constructor = Error500;
 
 function serve_static(root) {
+    root = process.cwd() + '/' + root;
+    console.log('setting up static serving from ' + root);
     return function(req, res, path) {
         try {
             return fs.readFileSync(root + path);
