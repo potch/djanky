@@ -127,7 +127,7 @@ Error404.prototype = new Error();
 Error404.prototype.constructor = Error404;
 
 
-// ## djanky.Error505
+// ## djanky.Error500
 // when we throw this, return the user a 500 error.
 
 // parameters:
