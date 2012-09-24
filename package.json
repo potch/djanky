@@ -6,6 +6,10 @@
         "name": "Potch",
         "email": "me@potch.me"
     },
+    "repository" : {
+        "type": "git",
+        "url": "https://github.com/potch/djanky.git"
+    },
     "dependencies": {
         "underscore": "1.x.x",
         "nunjucks": "0.1.x"
