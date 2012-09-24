@@ -65,6 +65,15 @@ function Error500(message) {
 Error500.prototype = new Error();
 Error500.prototype.constructor = Error500;
 
+function serve_static(root) {
+    return function(req, res, path) {
+        try {
+            return fs.readFileSync(root + path);
+        } catch (e) {
+            throw new djanky.Error404('No media found for ' + root + path);
+        }
+    };
+}
 
 function matchRoute(routes, url) {
     for (var i=0; i<routes.length; i++) {
@@ -82,5 +91,6 @@ function matchRoute(routes, url) {
 module.exports = {
     Server: Server,
     Error404: Error404,
-    Error500: Error500
+    Error500: Error500,
+    serve_static: serve_static
 };
