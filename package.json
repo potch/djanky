@@ -1,7 +1,7 @@
 {
     "name": "djanky",
     "description": "An itty bitty web framework, loosely inspired by Django",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "author": {
         "name": "Potch",
         "email": "me@potch.me"
@@ -17,5 +17,5 @@
     "engines": {
         "node": "0.8.x"
     },
-    "main": "index"
+    "main": "djanky"
 }

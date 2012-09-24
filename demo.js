@@ -1,4 +1,4 @@
-var djanky = require('./index');
+var djanky = require('./djanky');
 
 function index(request, response) {
     response.setHeader("Content-Type", "text/html");
