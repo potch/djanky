@@ -1,7 +1,7 @@
 Djanky
 ======
 
-An altogether unecesary little web framework inspired by Django
+An altogether unnecessary little web framework inspired by Django
 
 Quick Hits
 ----------
