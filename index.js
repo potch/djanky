@@ -70,7 +70,7 @@ function serve_static(root) {
         try {
             return fs.readFileSync(root + path);
         } catch (e) {
-            throw new djanky.Error404('No media found for ' + root + path);
+            throw new Error404('No media found for ' + root + path);
         }
     };
 }
